@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [AIHackathon Test Suite]" parallel="tests">
+  <test thread-count="1" name="Tradition Test for Applitools AI Hackathon(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://demo.applitools.com/hackathon.html"/>
+    <classes>
+      <class name="testcases.AIHackathon.TraditionalTests">
+        <methods>
+          <include name="setup"/>
+          <include name="Dynamic_Content_Test" invocation-numbers="0"/>
+          <include name="Table_Sort_Test"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testcases.AIHackathon.TraditionalTests -->
+    </classes>
+  </test> <!-- Tradition Test for Applitools AI Hackathon(failed) -->
+  <test thread-count="1" name="Tradition Test for Applitools AI HackathonV2(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://demo.applitools.com/hackathonV2.html"/>
+    <classes>
+      <class name="testcases.AIHackathon.TraditionalTests">
+        <methods>
+          <include name="setup"/>
+          <include name="Data_Driven_Test" invocation-numbers="0 1 2 3"/>
+          <include name="Dynamic_Content_Test" invocation-numbers="0"/>
+          <include name="Login_Page_UI_Elements_Test"/>
+          <include name="Table_Sort_Test"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testcases.AIHackathon.TraditionalTests -->
+    </classes>
+  </test> <!-- Tradition Test for Applitools AI HackathonV2(failed) -->
+</suite> <!-- Failed suite [AIHackathon Test Suite] -->

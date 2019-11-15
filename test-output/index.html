@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-AIHackathon_Test_Suite">
+              <span class="suite-name border-failed">AIHackathon Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-AIHackathon_Test_Suite">
+                    <span>AIHackathonTests.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-AIHackathon_Test_Suite">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-AIHackathon_Test_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-AIHackathon_Test_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-AIHackathon_Test_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-AIHackathon_Test_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-AIHackathon_Test_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">32 methods, 9 failed,   23 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AIHackathon_Test_Suite" class="hide-methods failed suite-AIHackathon_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-AIHackathon_Test_Suite -->
+                      <a href="#" panel-name="suite-AIHackathon_Test_Suite" class="show-methods failed suite-AIHackathon_Test_Suite"> (show)</a> <!-- show-methods failed suite-AIHackathon_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-AIHackathon_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.TraditionalTests" hash-for-method="Data_Driven_Test(Jack Gomez, Pass, N/A)">Data_Driven_Test(Jack Gomez, Pass, N/A)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.TraditionalTests" hash-for-method="Data_Driven_Test(N/A, Pass, Username must be present)">Data_Driven_Test(N/A, Pass, Username must be present)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.TraditionalTests" hash-for-method="Data_Driven_Test(Jack Gomez, N/A, Password must be present)">Data_Driven_Test(Jack Gomez, N/A, Password must be present)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.TraditionalTests" hash-for-method="Data_Driven_Test(N/A, N/A, Both Username and Password must be present)">Data_Driven_Test(N/A, N/A, Both Username and Password must be present)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.TraditionalTests" hash-for-method="Dynamic_Content_Test(https://demo.applitools.com/hackathon.html)">Dynamic_Content_Test(https://demo.applitools.com/hackathon.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.TraditionalTests" hash-for-method="Dynamic_Content_Test(https://demo.applitools.com/hackathonV2.html)">Dynamic_Content_Test(https://demo.applitools.com/hackathonV2.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.TraditionalTests" hash-for-method="Login_Page_UI_Elements_Test">Login_Page_UI_Elements_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.TraditionalTests" hash-for-method="Table_Sort_Test">Table_Sort_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.TraditionalTests" hash-for-method="Table_Sort_Test">Table_Sort_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AIHackathon_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AIHackathon_Test_Suite" class="hide-methods passed suite-AIHackathon_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-AIHackathon_Test_Suite -->
+                      <a href="#" panel-name="suite-AIHackathon_Test_Suite" class="show-methods passed suite-AIHackathon_Test_Suite"> (show)</a> <!-- show-methods passed suite-AIHackathon_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-AIHackathon_Test_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.TraditionalTests" hash-for-method="Canvas_Chart_Test">Canvas_Chart_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.VisualAITests" hash-for-method="Canvas_Chart_Test">Canvas_Chart_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.TraditionalTests" hash-for-method="Canvas_Chart_Test">Canvas_Chart_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.VisualAITests" hash-for-method="Canvas_Chart_Test">Canvas_Chart_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.TraditionalTests" hash-for-method="Data_Driven_Test(Jack Gomez, N/A, Password must be present)">Data_Driven_Test(Jack Gomez, N/A, Password must be present)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.TraditionalTests" hash-for-method="Data_Driven_Test(N/A, N/A, Both Username and Password must be present)">Data_Driven_Test(N/A, N/A, Both Username and Password must be present)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.TraditionalTests" hash-for-method="Data_Driven_Test(N/A, Pass, Username must be present)">Data_Driven_Test(N/A, Pass, Username must be present)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.TraditionalTests" hash-for-method="Data_Driven_Test(Jack Gomez, Pass, N/A)">Data_Driven_Test(Jack Gomez, Pass, N/A)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.VisualAITests" hash-for-method="Data_Driven_Test(Jack Gomez, Pass, N/A)">Data_Driven_Test(Jack Gomez, Pass, N/A)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.VisualAITests" hash-for-method="Data_Driven_Test(N/A, Pass, Username must be present)">Data_Driven_Test(N/A, Pass, Username must be present)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.VisualAITests" hash-for-method="Data_Driven_Test(N/A, N/A, Both Username and Password must be present)">Data_Driven_Test(N/A, N/A, Both Username and Password must be present)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.VisualAITests" hash-for-method="Data_Driven_Test(Jack Gomez, N/A, Password must be present)">Data_Driven_Test(Jack Gomez, N/A, Password must be present)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.VisualAITests" hash-for-method="Data_Driven_Test(Jack Gomez, N/A, Password must be present)">Data_Driven_Test(Jack Gomez, N/A, Password must be present)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.VisualAITests" hash-for-method="Data_Driven_Test(N/A, N/A, Both Username and Password must be present)">Data_Driven_Test(N/A, N/A, Both Username and Password must be present)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.VisualAITests" hash-for-method="Data_Driven_Test(N/A, Pass, Username must be present)">Data_Driven_Test(N/A, Pass, Username must be present)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.VisualAITests" hash-for-method="Data_Driven_Test(Jack Gomez, Pass, N/A)">Data_Driven_Test(Jack Gomez, Pass, N/A)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.VisualAITests" hash-for-method="Dynamic_Content_Test(https://demo.applitools.com/hackathon.html)">Dynamic_Content_Test(https://demo.applitools.com/hackathon.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.VisualAITests" hash-for-method="Dynamic_Content_Test(https://demo.applitools.com/hackathonV2.html)">Dynamic_Content_Test(https://demo.applitools.com/hackathonV2.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.TraditionalTests" hash-for-method="Login_Page_UI_Elements_Test">Login_Page_UI_Elements_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.VisualAITests" hash-for-method="Login_Page_UI_Elements_Test">Login_Page_UI_Elements_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.VisualAITests" hash-for-method="Login_Page_UI_Elements_Test">Login_Page_UI_Elements_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.VisualAITests" hash-for-method="Table_Sort_Test">Table_Sort_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-AIHackathon_Test_Suite" title="testcases.AIHackathon.VisualAITests" hash-for-method="Table_Sort_Test">Table_Sort_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AIHackathon_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AIHackathon_Test_Suite" class="panel AIHackathon_Test_Suite">
+          <div class="suite-AIHackathon_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.AIHackathon.TraditionalTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Data_Driven_Test(Jack Gomez, Pass, N/A)">
+                  </a> <!-- Data_Driven_Test(Jack Gomez, Pass, N/A) -->
+                  <span class="method-name">Data_Driven_Test</span>
+                  <span class="parameters">(Jack Gomez, Pass, N/A)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@id=&quot;logged-user-name&quot;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at utilities.Base.PageEvents.wait_element_visible(PageEvents.java:213)
+	at utilities.Base.PageEvents.getElementText(PageEvents.java:100)
+	at utilities.AIHackathon.SearchPageFactory_HomePage.getText_homePage_loggedUsernameLabel(SearchPageFactory_HomePage.java:50)
+	at testcases.AIHackathon.TraditionalTests.Data_Driven_Test(TraditionalTests.java:99)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&quot;logged-user-name&quot;]&quot;}
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;05659A-GUSER2&apos;, ip: &apos;fe80:0:0:0:6d:f2fa:fb78:c238%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_192&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: /var/folders/zy/fzk1mny500q...}, goog:chromeOptions: {debuggerAddress: localhost:59995}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8d2c8764ef4f84ac3bb3aa235d90c2e7
+*** Element info: {Using=xpath, value=//div[@id=&quot;logged-user-name&quot;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 24 more
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Data_Driven_Test(N/A, Pass, Username must be present)">
+                  </a> <!-- Data_Driven_Test(N/A, Pass, Username must be present) -->
+                  <span class="method-name">Data_Driven_Test</span>
+                  <span class="parameters">(N/A, Pass, Username must be present)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Enter your username] but found [John Smith],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [Enter your password] but found [ABC$*1@],
+	expected [Both Username and Password must be present] but found [Please enter both username and password]
+	at testcases.AIHackathon.TraditionalTests.Data_Driven_Test(TraditionalTests.java:102)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Data_Driven_Test(Jack Gomez, N/A, Password must be present)">
+                  </a> <!-- Data_Driven_Test(Jack Gomez, N/A, Password must be present) -->
+                  <span class="method-name">Data_Driven_Test</span>
+                  <span class="parameters">(Jack Gomez, N/A, Password must be present)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Enter your username] but found [John Smith],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [Enter your password] but found [ABC$*1@],
+	expected [Both Username and Password must be present] but found [Please enter both username and password]
+	at testcases.AIHackathon.TraditionalTests.Data_Driven_Test(TraditionalTests.java:102)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Data_Driven_Test(N/A, N/A, Both Username and Password must be present)">
+                  </a> <!-- Data_Driven_Test(N/A, N/A, Both Username and Password must be present) -->
+                  <span class="method-name">Data_Driven_Test</span>
+                  <span class="parameters">(N/A, N/A, Both Username and Password must be present)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Enter your username] but found [John Smith],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [Enter your password] but found [ABC$*1@],
+	expected [Both Username and Password must be present] but found [Please enter both username and password]
+	at testcases.AIHackathon.TraditionalTests.Data_Driven_Test(TraditionalTests.java:102)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Dynamic_Content_Test(https://demo.applitools.com/hackathon.html)">
+                  </a> <!-- Dynamic_Content_Test(https://demo.applitools.com/hackathon.html) -->
+                  <span class="method-name">Dynamic_Content_Test</span>
+                  <span class="parameters">(https://demo.applitools.com/hackathon.html)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [&lt;table id=&quot;transactionsTable&quot; class=&quot;table table-padded&quot;&gt;
+                    &lt;thead&gt;
+                      &lt;tr&gt;
+                        &lt;th id=&quot;status&quot; onclick=&quot;sortTable(0)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Status
+                        &lt;/th&gt;
+                        &lt;th id=&quot;date&quot; onclick=&quot;sortTable(1)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Date
+                        &lt;/th&gt;
+                        &lt;th id=&quot;description&quot; onclick=&quot;sortTable(2)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Description
+                        &lt;/th&gt;
+                        &lt;th id=&quot;category&quot; onclick=&quot;sortTable(3)&quot; class=&quot;text-center&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Category
+                        &lt;/th&gt;
+                        &lt;th id=&quot;amount&quot; onclick=&quot;sortTable(4)&quot; class=&quot;text-right&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Amount
+                        &lt;/th&gt;
+                      &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Yesterday&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;7:45am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company3.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;MailChimp Services&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-warning&quot; href=&quot;&quot;&gt;Software&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-danger&quot;&gt;- 320.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller green&quot;&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 7th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;9:51am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company4.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Ebay Marketplace&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-danger&quot; href=&quot;&quot;&gt;Ecommerce&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-danger&quot;&gt;- 244.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 23rd&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;2:7pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company6.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Shopify product&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-primary&quot; href=&quot;&quot;&gt;Shopping&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 17.99 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 9th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;7:45pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company7.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt; Templates Inc&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-primary&quot; href=&quot;&quot;&gt;Business&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 340.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller red&quot;&gt;&lt;/span&gt;&lt;span&gt;Declined&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 19th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;3:22pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company2.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Stripe Payment Processing&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-danger&quot; href=&quot;&quot;&gt;Finance&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 952.23 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller green&quot;&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Today&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;1:52am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company1.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Starbucks coffee&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-success&quot; href=&quot;&quot;&gt;Restaurant / Cafe&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 1,250.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      
+                      
+                      
+                      
+                      
+                    &lt;/tbody&gt;
+                  &lt;/table&gt;] but found [&lt;table id=&quot;transactionsTable&quot; class=&quot;table table-padded&quot;&gt;
+                    &lt;thead&gt;
+                      &lt;tr&gt;
+                        &lt;th id=&quot;status&quot; onclick=&quot;sortTable(0)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Status
+                        &lt;/th&gt;
+                        &lt;th id=&quot;date&quot; onclick=&quot;sortTable(1)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Date
+                        &lt;/th&gt;
+                        &lt;th id=&quot;description&quot; onclick=&quot;sortTable(2)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Description
+                        &lt;/th&gt;
+                        &lt;th id=&quot;category&quot; onclick=&quot;sortTable(3)&quot; class=&quot;text-center&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Category
+                        &lt;/th&gt;
+                        &lt;th id=&quot;amount&quot; onclick=&quot;sortTable(4)&quot; class=&quot;text-right&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Amount
+                        &lt;/th&gt;
+                      &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller green&quot;&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Today&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;1:52am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company1.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Starbucks coffee&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-success&quot; href=&quot;&quot;&gt;Restaurant / Cafe&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 1,250.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller red&quot;&gt;&lt;/span&gt;&lt;span&gt;Declined&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 19th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;3:22pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company2.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Stripe Payment Processing&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-danger&quot; href=&quot;&quot;&gt;Finance&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 952.23 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Yesterday&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;7:45am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company3.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;MailChimp Services&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-warning&quot; href=&quot;&quot;&gt;Software&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-danger&quot;&gt;- 320.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 23rd&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;2:7pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company6.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Shopify product&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-primary&quot; href=&quot;&quot;&gt;Shopping&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 17.99 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller green&quot;&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 7th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;9:51am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company4.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Ebay Marketplace&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-danger&quot; href=&quot;&quot;&gt;Ecommerce&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-danger&quot;&gt;- 244.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 9th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;7:45pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company7.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt; Templates Inc&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-primary&quot; href=&quot;&quot;&gt;Business&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 340.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                  &lt;/table&gt;]
+	at testcases.AIHackathon.TraditionalTests.Dynamic_Content_Test(TraditionalTests.java:180)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Dynamic_Content_Test(https://demo.applitools.com/hackathonV2.html)">
+                  </a> <!-- Dynamic_Content_Test(https://demo.applitools.com/hackathonV2.html) -->
+                  <span class="method-name">Dynamic_Content_Test</span>
+                  <span class="parameters">(https://demo.applitools.com/hackathonV2.html)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Enter your username] but found [John Smith],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [Enter your password] but found [ABC$*1@],
+	expected [Both Username and Password must be present] but found [Please enter both username and password],
+	expected [&lt;table id=&quot;transactionsTable&quot; class=&quot;table table-padded&quot;&gt;
+                    &lt;thead&gt;
+                      &lt;tr&gt;
+                        &lt;th id=&quot;status&quot; onclick=&quot;sortTable(0)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Status
+                        &lt;/th&gt;
+                        &lt;th id=&quot;date&quot; onclick=&quot;sortTable(1)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Date
+                        &lt;/th&gt;
+                        &lt;th id=&quot;description&quot; onclick=&quot;sortTable(2)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Description
+                        &lt;/th&gt;
+                        &lt;th id=&quot;category&quot; onclick=&quot;sortTable(3)&quot; class=&quot;text-center&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Category
+                        &lt;/th&gt;
+                        &lt;th id=&quot;amount&quot; onclick=&quot;sortTable(4)&quot; class=&quot;text-right&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Amount
+                        &lt;/th&gt;
+                      &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Yesterday&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;7:45am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company3.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;MailChimp Services&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-warning&quot; href=&quot;&quot;&gt;Software&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-danger&quot;&gt;- 320.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller green&quot;&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 7th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;9:51am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company4.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Ebay Marketplace&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-danger&quot; href=&quot;&quot;&gt;Ecommerce&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-danger&quot;&gt;- 244.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 23rd&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;2:7pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company6.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Shopify product&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-primary&quot; href=&quot;&quot;&gt;Shopping&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 17.99 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 9th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;7:45pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company7.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt; Templates Inc&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-primary&quot; href=&quot;&quot;&gt;Business&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 340.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller red&quot;&gt;&lt;/span&gt;&lt;span&gt;Declined&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 19th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;3:22pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company2.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Stripe Payment Processing&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-danger&quot; href=&quot;&quot;&gt;Finance&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 952.23 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller green&quot;&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Today&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;1:52am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company1.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Starbucks coffee&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-success&quot; href=&quot;&quot;&gt;Restaurant / Cafe&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 1,250.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      
+                      
+                      
+                      
+                      
+                    &lt;/tbody&gt;
+                  &lt;/table&gt;] but found [&lt;table id=&quot;transactionsTable&quot; class=&quot;table table-padded&quot;&gt;
+                    &lt;thead&gt;
+                     &lt;tr&gt;
+                        &lt;th id=&quot;status&quot; onclick=&quot;sortTable(0)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Status
+                        &lt;/th&gt;
+                        &lt;th id=&quot;date&quot; onclick=&quot;sortTable(1)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Date
+                        &lt;/th&gt;
+                        &lt;th id=&quot;description&quot; onclick=&quot;sortTable(2)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Description
+                        &lt;/th&gt;
+                        &lt;th id=&quot;category&quot; onclick=&quot;sortTable(3)&quot; class=&quot;text-center&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Category
+                        &lt;/th&gt;
+                        &lt;th id=&quot;amount&quot; onclick=&quot;sortTable(4)&quot; class=&quot;text-right&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Amount
+                        &lt;/th&gt;
+                      &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller green&quot;&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 7th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;9:51am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company4.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Ebay Marketplace&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-danger&quot; href=&quot;&quot;&gt;Ecommerce&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-danger&quot;&gt;- 244.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Yesterday&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;7:45am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company3.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;MailChimp Services&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-warning&quot; href=&quot;&quot;&gt;Software&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-danger&quot;&gt;- 320.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller green&quot;&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Today&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;1:52am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company1.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Starbucks coffee&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-success&quot; href=&quot;&quot;&gt;Restaurant / Cafe&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 1,250.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 23rd&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;2:7pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company6.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Shopify product&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-primary&quot; href=&quot;&quot;&gt;Shopping&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 17.99 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 9th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;7:45pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company7.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt; Templates Inc&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-primary&quot; href=&quot;&quot;&gt;Business&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 340.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller red&quot;&gt;&lt;/span&gt;&lt;span&gt;Declined&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 19th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;3:22pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company2.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Stripe Payment Processing&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-danger&quot; href=&quot;&quot;&gt;Finance&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 952.23 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      
+                      
+                      
+                      
+                    &lt;/tbody&gt;
+                  &lt;/table&gt;],
+	expected [true] but found [false]
+	at testcases.AIHackathon.TraditionalTests.Dynamic_Content_Test(TraditionalTests.java:180)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_Page_UI_Elements_Test">
+                  </a> <!-- Login_Page_UI_Elements_Test -->
+                  <span class="method-name">Login_Page_UI_Elements_Test</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Enter your username] but found [John Smith],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [Enter your password] but found [ABC$*1@]
+	at testcases.AIHackathon.TraditionalTests.Login_Page_UI_Elements_Test(TraditionalTests.java:54)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Table_Sort_Test">
+                  </a> <!-- Table_Sort_Test -->
+                  <span class="method-name">Table_Sort_Test</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [&lt;table id=&quot;transactionsTable&quot; class=&quot;table table-padded&quot;&gt;
+                    &lt;thead&gt;
+                      &lt;tr&gt;
+                        &lt;th id=&quot;status&quot; onclick=&quot;sortTable(0)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Status
+                        &lt;/th&gt;
+                        &lt;th id=&quot;date&quot; onclick=&quot;sortTable(1)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Date
+                        &lt;/th&gt;
+                        &lt;th id=&quot;description&quot; onclick=&quot;sortTable(2)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Description
+                        &lt;/th&gt;
+                        &lt;th id=&quot;category&quot; onclick=&quot;sortTable(3)&quot; class=&quot;text-center&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Category
+                        &lt;/th&gt;
+                        &lt;th id=&quot;amount&quot; onclick=&quot;sortTable(4)&quot; class=&quot;text-right&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Amount
+                        &lt;/th&gt;
+                      &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Yesterday&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;7:45am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company3.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;MailChimp Services&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-warning&quot; href=&quot;&quot;&gt;Software&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-danger&quot;&gt;- 320.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller green&quot;&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 7th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;9:51am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company4.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Ebay Marketplace&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-danger&quot; href=&quot;&quot;&gt;Ecommerce&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-danger&quot;&gt;- 244.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 23rd&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;2:7pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company6.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Shopify product&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-primary&quot; href=&quot;&quot;&gt;Shopping&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 17.99 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 9th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;7:45pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company7.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt; Templates Inc&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-primary&quot; href=&quot;&quot;&gt;Business&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 340.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller red&quot;&gt;&lt;/span&gt;&lt;span&gt;Declined&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 19th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;3:22pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company2.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Stripe Payment Processing&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-danger&quot; href=&quot;&quot;&gt;Finance&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 952.23 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller green&quot;&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Today&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;1:52am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company1.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Starbucks coffee&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-success&quot; href=&quot;&quot;&gt;Restaurant / Cafe&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 1,250.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      
+                      
+                      
+                      
+                      
+                    &lt;/tbody&gt;
+                  &lt;/table&gt;] but found [&lt;table id=&quot;transactionsTable&quot; class=&quot;table table-padded&quot;&gt;
+                    &lt;thead&gt;
+                      &lt;tr&gt;
+                        &lt;th id=&quot;status&quot; onclick=&quot;sortTable(0)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Status
+                        &lt;/th&gt;
+                        &lt;th id=&quot;date&quot; onclick=&quot;sortTable(1)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Date
+                        &lt;/th&gt;
+                        &lt;th id=&quot;description&quot; onclick=&quot;sortTable(2)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Description
+                        &lt;/th&gt;
+                        &lt;th id=&quot;category&quot; onclick=&quot;sortTable(3)&quot; class=&quot;text-center&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Category
+                        &lt;/th&gt;
+                        &lt;th id=&quot;amount&quot; onclick=&quot;sortTable(4)&quot; class=&quot;text-right&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Amount
+                        &lt;/th&gt;
+                      &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller green&quot;&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Today&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;1:52am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company1.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Starbucks coffee&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-success&quot; href=&quot;&quot;&gt;Restaurant / Cafe&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 1,250.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller red&quot;&gt;&lt;/span&gt;&lt;span&gt;Declined&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 19th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;3:22pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company2.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Stripe Payment Processing&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-danger&quot; href=&quot;&quot;&gt;Finance&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 952.23 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Yesterday&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;7:45am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company3.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;MailChimp Services&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-warning&quot; href=&quot;&quot;&gt;Software&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-danger&quot;&gt;- 320.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 23rd&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;2:7pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company6.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Shopify product&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-primary&quot; href=&quot;&quot;&gt;Shopping&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 17.99 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller green&quot;&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 7th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;9:51am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company4.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Ebay Marketplace&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-danger&quot; href=&quot;&quot;&gt;Ecommerce&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-danger&quot;&gt;- 244.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 9th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;7:45pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company7.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt; Templates Inc&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-primary&quot; href=&quot;&quot;&gt;Business&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 340.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                  &lt;/table&gt;]
+	at testcases.AIHackathon.TraditionalTests.Table_Sort_Test(TraditionalTests.java:126)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Table_Sort_Test">
+                  </a> <!-- Table_Sort_Test -->
+                  <span class="method-name">Table_Sort_Test</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [Enter your username] but found [John Smith],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [Enter your password] but found [ABC$*1@],
+	expected [Both Username and Password must be present] but found [Please enter both username and password],
+	expected [&lt;table id=&quot;transactionsTable&quot; class=&quot;table table-padded&quot;&gt;
+                    &lt;thead&gt;
+                      &lt;tr&gt;
+                        &lt;th id=&quot;status&quot; onclick=&quot;sortTable(0)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Status
+                        &lt;/th&gt;
+                        &lt;th id=&quot;date&quot; onclick=&quot;sortTable(1)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Date
+                        &lt;/th&gt;
+                        &lt;th id=&quot;description&quot; onclick=&quot;sortTable(2)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Description
+                        &lt;/th&gt;
+                        &lt;th id=&quot;category&quot; onclick=&quot;sortTable(3)&quot; class=&quot;text-center&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Category
+                        &lt;/th&gt;
+                        &lt;th id=&quot;amount&quot; onclick=&quot;sortTable(4)&quot; class=&quot;text-right&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Amount
+                        &lt;/th&gt;
+                      &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Yesterday&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;7:45am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company3.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;MailChimp Services&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-warning&quot; href=&quot;&quot;&gt;Software&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-danger&quot;&gt;- 320.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller green&quot;&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 7th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;9:51am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company4.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Ebay Marketplace&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-danger&quot; href=&quot;&quot;&gt;Ecommerce&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-danger&quot;&gt;- 244.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 23rd&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;2:7pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company6.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Shopify product&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-primary&quot; href=&quot;&quot;&gt;Shopping&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 17.99 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 9th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;7:45pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company7.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt; Templates Inc&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-primary&quot; href=&quot;&quot;&gt;Business&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 340.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller red&quot;&gt;&lt;/span&gt;&lt;span&gt;Declined&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 19th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;3:22pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company2.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Stripe Payment Processing&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-danger&quot; href=&quot;&quot;&gt;Finance&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 952.23 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller green&quot;&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Today&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;1:52am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company1.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Starbucks coffee&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-success&quot; href=&quot;&quot;&gt;Restaurant / Cafe&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 1,250.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      
+                      
+                      
+                      
+                      
+                    &lt;/tbody&gt;
+                  &lt;/table&gt;] but found [&lt;table id=&quot;transactionsTable&quot; class=&quot;table table-padded&quot;&gt;
+                    &lt;thead&gt;
+                     &lt;tr&gt;
+                        &lt;th id=&quot;status&quot; onclick=&quot;sortTable(0)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Status
+                        &lt;/th&gt;
+                        &lt;th id=&quot;date&quot; onclick=&quot;sortTable(1)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Date
+                        &lt;/th&gt;
+                        &lt;th id=&quot;description&quot; onclick=&quot;sortTable(2)&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Description
+                        &lt;/th&gt;
+                        &lt;th id=&quot;category&quot; onclick=&quot;sortTable(3)&quot; class=&quot;text-center&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Category
+                        &lt;/th&gt;
+                        &lt;th id=&quot;amount&quot; onclick=&quot;sortTable(4)&quot; class=&quot;text-right&quot; onmouseover=&quot;&quot; style=&quot;cursor: pointer;&quot;&gt;
+                          Amount
+                        &lt;/th&gt;
+                      &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller green&quot;&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 7th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;9:51am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company4.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Ebay Marketplace&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-danger&quot; href=&quot;&quot;&gt;Ecommerce&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-danger&quot;&gt;- 244.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Yesterday&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;7:45am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company3.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;MailChimp Services&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-warning&quot; href=&quot;&quot;&gt;Software&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-danger&quot;&gt;- 320.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller green&quot;&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Today&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;1:52am&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company1.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Starbucks coffee&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-success&quot; href=&quot;&quot;&gt;Restaurant / Cafe&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 1,250.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 23rd&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;2:7pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company6.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Shopify product&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-primary&quot; href=&quot;&quot;&gt;Shopping&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 17.99 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller yellow&quot;&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 9th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;7:45pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company7.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt; Templates Inc&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-primary&quot; href=&quot;&quot;&gt;Business&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 340.00 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;&lt;tr&gt;
+                        &lt;td class=&quot;nowrap&quot;&gt;
+                          &lt;span class=&quot;status-pill smaller red&quot;&gt;&lt;/span&gt;&lt;span&gt;Declined&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                          &lt;span&gt;Jan 19th&lt;/span&gt;&lt;span class=&quot;smaller lighter&quot;&gt;3:22pm&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;cell-with-media&quot;&gt;
+                          &lt;img alt=&quot;&quot; src=&quot;img/company2.png&quot; style=&quot;height: 25px;&quot;&gt;&lt;span&gt;Stripe Payment Processing&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-center&quot;&gt;
+                          &lt;a class=&quot;badge badge-danger&quot; href=&quot;&quot;&gt;Finance&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td class=&quot;text-right bolder nowrap&quot;&gt;
+                          &lt;span class=&quot;text-success&quot;&gt;+ 952.23 USD&lt;/span&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      
+                      
+                      
+                      
+                    &lt;/tbody&gt;
+                  &lt;/table&gt;]
+	at testcases.AIHackathon.TraditionalTests.Table_Sort_Test(TraditionalTests.java:126)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AIHackathon_Test_Suite-class-failed -->
+          <div class="suite-AIHackathon_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.AIHackathon.TraditionalTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Canvas_Chart_Test">
+                  </a> <!-- Canvas_Chart_Test -->
+                  <span class="method-name">Canvas_Chart_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Canvas_Chart_Test">
+                  </a> <!-- Canvas_Chart_Test -->
+                  <span class="method-name">Canvas_Chart_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Data_Driven_Test(Jack Gomez, N/A, Password must be present)">
+                  </a> <!-- Data_Driven_Test(Jack Gomez, N/A, Password must be present) -->
+                  <span class="method-name">Data_Driven_Test</span>
+                  <span class="parameters">(Jack Gomez, N/A, Password must be present)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Data_Driven_Test(N/A, N/A, Both Username and Password must be present)">
+                  </a> <!-- Data_Driven_Test(N/A, N/A, Both Username and Password must be present) -->
+                  <span class="method-name">Data_Driven_Test</span>
+                  <span class="parameters">(N/A, N/A, Both Username and Password must be present)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Data_Driven_Test(N/A, Pass, Username must be present)">
+                  </a> <!-- Data_Driven_Test(N/A, Pass, Username must be present) -->
+                  <span class="method-name">Data_Driven_Test</span>
+                  <span class="parameters">(N/A, Pass, Username must be present)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Data_Driven_Test(Jack Gomez, Pass, N/A)">
+                  </a> <!-- Data_Driven_Test(Jack Gomez, Pass, N/A) -->
+                  <span class="method-name">Data_Driven_Test</span>
+                  <span class="parameters">(Jack Gomez, Pass, N/A)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_Page_UI_Elements_Test">
+                  </a> <!-- Login_Page_UI_Elements_Test -->
+                  <span class="method-name">Login_Page_UI_Elements_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AIHackathon_Test_Suite-class-passed -->
+          <div class="suite-AIHackathon_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.AIHackathon.VisualAITests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Canvas_Chart_Test">
+                  </a> <!-- Canvas_Chart_Test -->
+                  <span class="method-name">Canvas_Chart_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Canvas_Chart_Test">
+                  </a> <!-- Canvas_Chart_Test -->
+                  <span class="method-name">Canvas_Chart_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Data_Driven_Test(Jack Gomez, Pass, N/A)">
+                  </a> <!-- Data_Driven_Test(Jack Gomez, Pass, N/A) -->
+                  <span class="method-name">Data_Driven_Test</span>
+                  <span class="parameters">(Jack Gomez, Pass, N/A)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Data_Driven_Test(N/A, Pass, Username must be present)">
+                  </a> <!-- Data_Driven_Test(N/A, Pass, Username must be present) -->
+                  <span class="method-name">Data_Driven_Test</span>
+                  <span class="parameters">(N/A, Pass, Username must be present)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Data_Driven_Test(N/A, N/A, Both Username and Password must be present)">
+                  </a> <!-- Data_Driven_Test(N/A, N/A, Both Username and Password must be present) -->
+                  <span class="method-name">Data_Driven_Test</span>
+                  <span class="parameters">(N/A, N/A, Both Username and Password must be present)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Data_Driven_Test(Jack Gomez, N/A, Password must be present)">
+                  </a> <!-- Data_Driven_Test(Jack Gomez, N/A, Password must be present) -->
+                  <span class="method-name">Data_Driven_Test</span>
+                  <span class="parameters">(Jack Gomez, N/A, Password must be present)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Data_Driven_Test(Jack Gomez, N/A, Password must be present)">
+                  </a> <!-- Data_Driven_Test(Jack Gomez, N/A, Password must be present) -->
+                  <span class="method-name">Data_Driven_Test</span>
+                  <span class="parameters">(Jack Gomez, N/A, Password must be present)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Data_Driven_Test(N/A, N/A, Both Username and Password must be present)">
+                  </a> <!-- Data_Driven_Test(N/A, N/A, Both Username and Password must be present) -->
+                  <span class="method-name">Data_Driven_Test</span>
+                  <span class="parameters">(N/A, N/A, Both Username and Password must be present)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Data_Driven_Test(N/A, Pass, Username must be present)">
+                  </a> <!-- Data_Driven_Test(N/A, Pass, Username must be present) -->
+                  <span class="method-name">Data_Driven_Test</span>
+                  <span class="parameters">(N/A, Pass, Username must be present)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Data_Driven_Test(Jack Gomez, Pass, N/A)">
+                  </a> <!-- Data_Driven_Test(Jack Gomez, Pass, N/A) -->
+                  <span class="method-name">Data_Driven_Test</span>
+                  <span class="parameters">(Jack Gomez, Pass, N/A)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Dynamic_Content_Test(https://demo.applitools.com/hackathon.html)">
+                  </a> <!-- Dynamic_Content_Test(https://demo.applitools.com/hackathon.html) -->
+                  <span class="method-name">Dynamic_Content_Test</span>
+                  <span class="parameters">(https://demo.applitools.com/hackathon.html)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Dynamic_Content_Test(https://demo.applitools.com/hackathonV2.html)">
+                  </a> <!-- Dynamic_Content_Test(https://demo.applitools.com/hackathonV2.html) -->
+                  <span class="method-name">Dynamic_Content_Test</span>
+                  <span class="parameters">(https://demo.applitools.com/hackathonV2.html)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_Page_UI_Elements_Test">
+                  </a> <!-- Login_Page_UI_Elements_Test -->
+                  <span class="method-name">Login_Page_UI_Elements_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login_Page_UI_Elements_Test">
+                  </a> <!-- Login_Page_UI_Elements_Test -->
+                  <span class="method-name">Login_Page_UI_Elements_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Table_Sort_Test">
+                  </a> <!-- Table_Sort_Test -->
+                  <span class="method-name">Table_Sort_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Table_Sort_Test">
+                  </a> <!-- Table_Sort_Test -->
+                  <span class="method-name">Table_Sort_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AIHackathon_Test_Suite-class-passed -->
+        </div> <!-- panel AIHackathon_Test_Suite -->
+        <div panel-name="test-xml-AIHackathon_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/byavuz/Documents/Automation/Workspace/aihackathon/AIHackathonTests.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;AIHackathon Test Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Tradition Test for Applitools AI Hackathon&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://demo.applitools.com/hackathon.html&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.AIHackathon.TraditionalTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Tradition Test for Applitools AI Hackathon --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Visual AI Test for Applitools AI Hackathon&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://demo.applitools.com/hackathon.html&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.AIHackathon.VisualAITests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Visual AI Test for Applitools AI Hackathon --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Tradition Test for Applitools AI HackathonV2&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://demo.applitools.com/hackathonV2.html&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.AIHackathon.TraditionalTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Tradition Test for Applitools AI HackathonV2 --&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Visual AI Test for Applitools AI HackathonV2&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://demo.applitools.com/hackathonV2.html&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.AIHackathon.VisualAITests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Visual AI Test for Applitools AI HackathonV2 --&gt;
+&lt;/suite&gt; &lt;!-- AIHackathon Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AIHackathon_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AIHackathon Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Tradition Test for Applitools AI Hackathon (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Visual AI Test for Applitools AI Hackathon (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Tradition Test for Applitools AI HackathonV2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Visual AI Test for Applitools AI HackathonV2 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AIHackathon_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AIHackathon Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AIHackathon_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AIHackathon Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AIHackathon_Test_Suite');
+function tableData_AIHackathon_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(32);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Login_Page_UI_Elements_Test')
+data.setCell(0, 2, 'testcases.AIHackathon.TraditionalTests')
+data.setCell(0, 3, 189836);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Login_Page_UI_Elements_Test')
+data.setCell(1, 2, 'testcases.AIHackathon.TraditionalTests')
+data.setCell(1, 3, 157776);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Data_Driven_Test')
+data.setCell(2, 2, 'testcases.AIHackathon.VisualAITests')
+data.setCell(2, 3, 49737);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Data_Driven_Test')
+data.setCell(3, 2, 'testcases.AIHackathon.TraditionalTests')
+data.setCell(3, 3, 44738);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Data_Driven_Test')
+data.setCell(4, 2, 'testcases.AIHackathon.TraditionalTests')
+data.setCell(4, 3, 43197);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Data_Driven_Test')
+data.setCell(5, 2, 'testcases.AIHackathon.TraditionalTests')
+data.setCell(5, 3, 42586);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Data_Driven_Test')
+data.setCell(6, 2, 'testcases.AIHackathon.TraditionalTests')
+data.setCell(6, 3, 41734);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Data_Driven_Test')
+data.setCell(7, 2, 'testcases.AIHackathon.TraditionalTests')
+data.setCell(7, 3, 31405);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Dynamic_Content_Test')
+data.setCell(8, 2, 'testcases.AIHackathon.TraditionalTests')
+data.setCell(8, 3, 30594);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Canvas_Chart_Test')
+data.setCell(9, 2, 'testcases.AIHackathon.VisualAITests')
+data.setCell(9, 3, 30254);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Data_Driven_Test')
+data.setCell(10, 2, 'testcases.AIHackathon.VisualAITests')
+data.setCell(10, 3, 26125);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Dynamic_Content_Test')
+data.setCell(11, 2, 'testcases.AIHackathon.VisualAITests')
+data.setCell(11, 3, 22254);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'Dynamic_Content_Test')
+data.setCell(12, 2, 'testcases.AIHackathon.VisualAITests')
+data.setCell(12, 3, 22175);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'Data_Driven_Test')
+data.setCell(13, 2, 'testcases.AIHackathon.VisualAITests')
+data.setCell(13, 3, 20686);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'Data_Driven_Test')
+data.setCell(14, 2, 'testcases.AIHackathon.VisualAITests')
+data.setCell(14, 3, 20685);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'Data_Driven_Test')
+data.setCell(15, 2, 'testcases.AIHackathon.VisualAITests')
+data.setCell(15, 3, 20449);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'Canvas_Chart_Test')
+data.setCell(16, 2, 'testcases.AIHackathon.VisualAITests')
+data.setCell(16, 3, 20095);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'Data_Driven_Test')
+data.setCell(17, 2, 'testcases.AIHackathon.VisualAITests')
+data.setCell(17, 3, 18938);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'Data_Driven_Test')
+data.setCell(18, 2, 'testcases.AIHackathon.VisualAITests')
+data.setCell(18, 3, 18255);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'Data_Driven_Test')
+data.setCell(19, 2, 'testcases.AIHackathon.VisualAITests')
+data.setCell(19, 3, 16190);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'Table_Sort_Test')
+data.setCell(20, 2, 'testcases.AIHackathon.VisualAITests')
+data.setCell(20, 3, 15622);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'Login_Page_UI_Elements_Test')
+data.setCell(21, 2, 'testcases.AIHackathon.VisualAITests')
+data.setCell(21, 3, 14049);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'Table_Sort_Test')
+data.setCell(22, 2, 'testcases.AIHackathon.TraditionalTests')
+data.setCell(22, 3, 13853);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'Table_Sort_Test')
+data.setCell(23, 2, 'testcases.AIHackathon.VisualAITests')
+data.setCell(23, 3, 11388);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'Login_Page_UI_Elements_Test')
+data.setCell(24, 2, 'testcases.AIHackathon.VisualAITests')
+data.setCell(24, 3, 10980);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'Dynamic_Content_Test')
+data.setCell(25, 2, 'testcases.AIHackathon.TraditionalTests')
+data.setCell(25, 3, 9795);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'Data_Driven_Test')
+data.setCell(26, 2, 'testcases.AIHackathon.TraditionalTests')
+data.setCell(26, 3, 9383);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'Data_Driven_Test')
+data.setCell(27, 2, 'testcases.AIHackathon.TraditionalTests')
+data.setCell(27, 3, 9363);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'Data_Driven_Test')
+data.setCell(28, 2, 'testcases.AIHackathon.TraditionalTests')
+data.setCell(28, 3, 9356);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'Canvas_Chart_Test')
+data.setCell(29, 2, 'testcases.AIHackathon.TraditionalTests')
+data.setCell(29, 3, 7268);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'Table_Sort_Test')
+data.setCell(30, 2, 'testcases.AIHackathon.TraditionalTests')
+data.setCell(30, 3, 3819);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'Canvas_Chart_Test')
+data.setCell(31, 2, 'testcases.AIHackathon.TraditionalTests')
+data.setCell(31, 3, 3120);
+window.suiteTableData['AIHackathon_Test_Suite']= { tableData: data, tableDiv: 'times-div-AIHackathon_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 16 minutes</span>
+              <div id="times-div-AIHackathon_Test_Suite">
+              </div> <!-- times-div-AIHackathon_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AIHackathon_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AIHackathon Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AIHackathon_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AIHackathon_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.AIHackathon.TraditionalTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome, https://demo.applitools.com/hackathon.html, org.testng.TestRunner@4524411f)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Login_Page_UI_Elements_Test</span>
+                <span class="method-start">4472 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Data_Driven_Test(N/A, N/A, Both Username and Password must be present)</span>
+                <span class="method-start">162259 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Data_Driven_Test(Jack Gomez, N/A, Password must be present)</span>
+                <span class="method-start">205457 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Data_Driven_Test(N/A, Pass, Username must be present)</span>
+                <span class="method-start">250196 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Data_Driven_Test(Jack Gomez, Pass, N/A)</span>
+                <span class="method-start">292783 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Table_Sort_Test</span>
+                <span class="method-start">334518 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Canvas_Chart_Test</span>
+                <span class="method-start">348374 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Dynamic_Content_Test(https://demo.applitools.com/hackathon.html)</span>
+                <span class="method-start">355643 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">afterClass</span>
+                <span class="method-start">386239 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.AIHackathon.VisualAITests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome, https://demo.applitools.com/hackathon.html, org.testng.TestRunner@401e7803)</span>
+                <span class="method-start">386393 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Login_Page_UI_Elements_Test</span>
+                <span class="method-start">388928 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Data_Driven_Test(N/A, N/A, Both Username and Password must be present)</span>
+                <span class="method-start">399910 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Data_Driven_Test(Jack Gomez, N/A, Password must be present)</span>
+                <span class="method-start">449647 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Data_Driven_Test(N/A, Pass, Username must be present)</span>
+                <span class="method-start">475772 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Data_Driven_Test(Jack Gomez, Pass, N/A)</span>
+                <span class="method-start">491962 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Table_Sort_Test</span>
+                <span class="method-start">510217 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Canvas_Chart_Test</span>
+                <span class="method-start">521606 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Dynamic_Content_Test(https://demo.applitools.com/hackathon.html)</span>
+                <span class="method-start">541702 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">563957 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.AIHackathon.TraditionalTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome, https://demo.applitools.com/hackathonV2.html, org.testng.TestRunner@10dba097)</span>
+                <span class="method-start">564249 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login_Page_UI_Elements_Test</span>
+                <span class="method-start">566563 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Data_Driven_Test(N/A, N/A, Both Username and Password must be present)</span>
+                <span class="method-start">756401 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Data_Driven_Test(Jack Gomez, N/A, Password must be present)</span>
+                <span class="method-start">765784 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Data_Driven_Test(N/A, Pass, Username must be present)</span>
+                <span class="method-start">775141 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Data_Driven_Test(Jack Gomez, Pass, N/A)</span>
+                <span class="method-start">784505 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Table_Sort_Test</span>
+                <span class="method-start">815911 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Canvas_Chart_Test</span>
+                <span class="method-start">819731 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Dynamic_Content_Test(https://demo.applitools.com/hackathonV2.html)</span>
+                <span class="method-start">822852 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">afterClass</span>
+                <span class="method-start">832648 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.AIHackathon.VisualAITests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome, https://demo.applitools.com/hackathonV2.html, org.testng.TestRunner@1786f9d5)</span>
+                <span class="method-start">832768 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Login_Page_UI_Elements_Test</span>
+                <span class="method-start">835307 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Data_Driven_Test(N/A, N/A, Both Username and Password must be present)</span>
+                <span class="method-start">849357 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Data_Driven_Test(Jack Gomez, N/A, Password must be present)</span>
+                <span class="method-start">869806 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Data_Driven_Test(N/A, Pass, Username must be present)</span>
+                <span class="method-start">890492 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Data_Driven_Test(Jack Gomez, Pass, N/A)</span>
+                <span class="method-start">911178 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Table_Sort_Test</span>
+                <span class="method-start">930116 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Canvas_Chart_Test</span>
+                <span class="method-start">945739 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Dynamic_Content_Test(https://demo.applitools.com/hackathonV2.html)</span>
+                <span class="method-start">975993 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">998168 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
