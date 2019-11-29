@@ -57,5 +57,32 @@ For MAC;
 For any question do not hesitate to contact me,
 yberky85@hotmail.com
 
+----------------------------------------------------------------------------------------------------
+**RUN Automation in Eclipse***
+You can directly right click on "AIHackathonTests.xml" and choose Run As>TestNG Suite option. That will start and run the test suite I applied.
 
+**Additional Info;**
+Under "AIHackathonTests.xml" you will see 4 tests. As a reference you can find one of them;
+
+<test name="Tradition Test for Applitools AI Hackathon"
+		preserve-order="true">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="url"
+			value="https://demo.applitools.com/hackathon.html"></parameter>
+		<classes>
+			<class name="testcases.AIHackathon.TraditionalTests">
+			</class>
+		</classes>
+	</test>
+  
+  You can change these parameters depends on you expectation, but as default I set all for seeing all results at once;
+  * Test name "Tradition Test for Applitools AI Hackathon"
+  * URL value "https://demo.applitools.com/hackathon.html"
+  
+  Note= You can run parallel all these test cases in each in different browser. The default setting for thread is 1, that you can see it in here; 
+  
+  <suite name="AIHackathon Test Suite" parallel="tests"
+	thread-count="1">
+
+You can change thread-count 2,3 depends on how would you like the test in parallel.
 
